@@ -14,6 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $title = 'Ciao, sei nella home!!!';
+    $subtitle = 'Si proprio nella home, hai capito bene!!!';
+    $table_title = 'ecco un elenco di cose a caso';
+    $displayTable = true;
+    $list = [
+        'Panino alla mortadella',
+        'Marco Pannella',
+        'La Gioconda',
+        "Giovanna D'arco",
+        "L'induismo",
+        'I Gatti siamesi',
+        'Il diritto penale',
+        'PES 2008',
+        'Radja Naingollan',
+        'PoltroneSofà',
+        'Il Baratto'
+    ];
     return view('welcome');
 });
 Route::get('/about', function () {

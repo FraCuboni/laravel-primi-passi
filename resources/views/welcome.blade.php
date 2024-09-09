@@ -40,7 +40,7 @@
 
     <!-- Content-->
     <div class="full-height">
-        <h1>HOME</h1>
+        <h1>{{$title}}</h1>
     </div>
 </body>
 
