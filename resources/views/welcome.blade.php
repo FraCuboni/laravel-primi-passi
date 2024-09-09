@@ -8,10 +8,11 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .full-height {
-            height: 100vh;
+            margin: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 40px;
         }
     </style>
 </head>
@@ -40,7 +41,24 @@
 
     <!-- Content-->
     <div class="full-height">
-        <h1>{{$title}}</h1>
+        <div>
+            <h1>{{$title}}</h1>
+            <h5>{{$subtitle}}</h5>
+        </div>
+        <div>
+            <!-- condizione per creazione tabella -->
+            @if($display_table)
+            <h4>{{$table_title}}</h4>
+            <ul class="list-group">
+                @foreach($list as $element)
+                <li class="list-group-item">{{$element}}</li>
+                @endforeach
+            </ul>
+
+            @else
+            <h3>Ti aspettavi qualcos'altro? Fatti bastare quello che vedi</h3>
+            @endif
+        </div>
     </div>
 </body>
 

@@ -11,6 +11,7 @@
             height: 100vh;
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
         }
     </style>
@@ -41,6 +42,7 @@
     <!-- Content-->
     <div class="full-height">
         <h1>ABOUT</h1>
+        <p>Torna su home qua non ci sta nulla</p>
     </div>
 </body>
 

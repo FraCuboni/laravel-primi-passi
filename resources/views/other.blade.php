@@ -9,6 +9,7 @@
     <style>
         .full-height {
             height: 100vh;
+            flex-direction: column;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,6 +42,7 @@
     <!-- Content-->
     <div class="full-height">
         <h1>OTHER</h1>
+        <p>Torna su home qua non ci sta nulla</p>
     </div>
 </body>
 

@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $title = 'Ciao, sei nella home!!!';
     $subtitle = 'Si proprio nella home, hai capito bene!!!';
-    $table_title = 'ecco un elenco di cose a caso';
-    $displayTable = true;
+    $table_title = 'Ecco un elenco di cose a caso:';
+    $display_table = true;
     $list = [
         'Panino alla mortadella',
         'Marco Pannella',
@@ -27,11 +27,11 @@ Route::get('/', function () {
         'I Gatti siamesi',
         'Il diritto penale',
         'PES 2008',
-        'Radja Naingollan',
         'PoltroneSofà',
-        'Il Baratto'
+        'Il Baratto',
+        'Radja Naingollan',
     ];
-    return view('welcome');
+    return view('welcome', compact('title', 'subtitle', 'table_title', 'display_table', 'list'));
 });
 Route::get('/about', function () {
     return view('about');
