@@ -39,5 +39,3 @@ Route::get('/about', function () {
 Route::get('/other', function () {
     return view('other');
 });
-
-// completed, sorry for the one commit work :/
